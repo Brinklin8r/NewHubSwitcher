@@ -23,59 +23,85 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cbSystemDropDown = new System.Windows.Forms.ComboBox();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnLaunch = new System.Windows.Forms.Button();
+            this.lblURL = new System.Windows.Forms.Label();
+            this.lblUIN = new System.Windows.Forms.Label();
+            this.lblResutls = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbSystemDropDown
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(11, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cbSystemDropDown.FormattingEnabled = true;
+            this.cbSystemDropDown.Location = new System.Drawing.Point(11, 12);
+            this.cbSystemDropDown.Name = "cbSystemDropDown";
+            this.cbSystemDropDown.Size = new System.Drawing.Size(218, 21);
+            this.cbSystemDropDown.TabIndex = 0;
             // 
-            // button1
+            // btnEdit
             // 
-            this.button1.Location = new System.Drawing.Point(11, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEdit.Location = new System.Drawing.Point(48, 98);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(56, 23);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnLaunch
             // 
-            this.button2.Location = new System.Drawing.Point(235, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 50);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnLaunch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLaunch.Location = new System.Drawing.Point(136, 96);
+            this.btnLaunch.Name = "btnLaunch";
+            this.btnLaunch.Size = new System.Drawing.Size(55, 25);
+            this.btnLaunch.TabIndex = 2;
+            this.btnLaunch.Text = "Launch";
+            this.btnLaunch.UseVisualStyleBackColor = true;
+            this.btnLaunch.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label1
+            // lblURL
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.lblURL.AutoSize = true;
+            this.lblURL.Location = new System.Drawing.Point(12, 48);
+            this.lblURL.Name = "lblURL";
+            this.lblURL.Size = new System.Drawing.Size(38, 13);
+            this.lblURL.TabIndex = 3;
+            this.lblURL.Text = "URL:  ";
             // 
-            // Form1
+            // lblUIN
+            // 
+            this.lblUIN.AutoSize = true;
+            this.lblUIN.Location = new System.Drawing.Point(12, 76);
+            this.lblUIN.Name = "lblUIN";
+            this.lblUIN.Size = new System.Drawing.Size(35, 13);
+            this.lblUIN.TabIndex = 4;
+            this.lblUIN.Text = "UIN:  ";
+            // 
+            // lblResutls
+            // 
+            this.lblResutls.AutoSize = true;
+            this.lblResutls.Location = new System.Drawing.Point(12, 138);
+            this.lblResutls.Name = "lblResutls";
+            this.lblResutls.Size = new System.Drawing.Size(42, 13);
+            this.lblResutls.TabIndex = 5;
+            this.lblResutls.Text = "Results";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 105);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(492, 287);
+            this.Controls.Add(this.lblResutls);
+            this.Controls.Add(this.lblUIN);
+            this.Controls.Add(this.lblURL);
+            this.Controls.Add(this.btnLaunch);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.cbSystemDropDown);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name = "MainForm";
+            this.Text = "HubSwitcher";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,10 +109,12 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbSystemDropDown;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnLaunch;
+        private System.Windows.Forms.Label lblURL;
+        private System.Windows.Forms.Label lblUIN;
+        private System.Windows.Forms.Label lblResutls;
     }
 }
 
