@@ -31,6 +31,7 @@
             this.lblResutls = new System.Windows.Forms.Label();
             this.tbURL = new System.Windows.Forms.TextBox();
             this.tbUIN = new System.Windows.Forms.TextBox();
+            this.btnCurrent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbSystemDropDown
@@ -44,9 +45,9 @@
             // btnEdit
             // 
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdit.Location = new System.Drawing.Point(15, 99);
+            this.btnEdit.Location = new System.Drawing.Point(96, 97);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(56, 23);
+            this.btnEdit.Size = new System.Drawing.Size(56, 25);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -104,12 +105,24 @@
             this.tbUIN.Size = new System.Drawing.Size(180, 20);
             this.tbUIN.TabIndex = 7;
             // 
+            // btnCurrent
+            // 
+            this.btnCurrent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCurrent.Location = new System.Drawing.Point(15, 97);
+            this.btnCurrent.Name = "btnCurrent";
+            this.btnCurrent.Size = new System.Drawing.Size(56, 25);
+            this.btnCurrent.TabIndex = 8;
+            this.btnCurrent.Text = "Current";
+            this.btnCurrent.UseVisualStyleBackColor = true;
+            this.btnCurrent.Click += new System.EventHandler(this.btnCurrent_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(241, 183);
+            this.Controls.Add(this.btnCurrent);
             this.Controls.Add(this.tbUIN);
             this.Controls.Add(this.tbURL);
             this.Controls.Add(this.lblResutls);
@@ -136,6 +149,7 @@
         private System.Windows.Forms.Label lblResutls;
         private System.Windows.Forms.TextBox tbURL;
         private System.Windows.Forms.TextBox tbUIN;
+        private System.Windows.Forms.Button btnCurrent;
     }
 }
 

@@ -23,5 +23,9 @@ namespace HubSwitcher {
             tbUIN.Text = "1";
 
         }
+
+        private void btnCurrent_Click(object sender, EventArgs e) {
+
+        }
     }
 }

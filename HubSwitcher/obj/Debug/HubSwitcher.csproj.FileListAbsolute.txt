@@ -7,3 +7,12 @@ C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Projects\HubSwitch
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Projects\HubSwitcher\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.csproj.GenerateResource.Cache
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Projects\HubSwitcher\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.exe
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Projects\HubSwitcher\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.pdb
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\HubSwitcher.exe.config
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\HubSwitcher.exe
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\HubSwitcher.pdb
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.csprojResolveAssemblyReference.cache
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.MainForm.resources
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.Properties.Resources.resources
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.csproj.GenerateResource.Cache
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.exe
+C:\Users\cbrinkley\Source\Repos\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.pdb
