@@ -14,7 +14,17 @@ namespace HubSwitcher {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e) {
+        private void btnLaunch_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e) {
+            tbURL.Text = "WWW.IMAGEPOINTHOSTED.COM";
+            tbUIN.Text = "1";
+
+        }
+
+        private void btnCurrent_Click(object sender, EventArgs e) {
 
         }
     }
