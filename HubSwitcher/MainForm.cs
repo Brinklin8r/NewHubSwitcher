@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Configurations;
+
 
 namespace HubSwitcher {
     public partial class MainForm : Form {
@@ -25,7 +27,8 @@ namespace HubSwitcher {
         }
 
         private void btnCurrent_Click(object sender, EventArgs e) {
-
+            Config _AdminConfig = new Config();
+            _AdminConfig.ReadConfigFile();
         }
     }
 }

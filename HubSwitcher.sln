@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HubSwitcher", "HubSwitcher\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security", "..\Security\Security\Security\Security.csproj", "{63068E5E-6505-4F5F-8240-55AAB5253198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configuration", "Configuration\Configuration.csproj", "{65AC57E6-764B-4B4B-8A65-8E7C2390EECA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Configurations", "Configuration\Configurations.csproj", "{65AC57E6-764B-4B4B-8A65-8E7C2390EECA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,6 @@
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\bin\Debug\Configuration.dll
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\bin\Debug\Configuration.pdb
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\obj\Debug\Configurations.csprojResolveAssemblyReference.cache
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\obj\Debug\Configurations.csproj.CoreCompileInputs.cache
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\obj\Debug\Configuration.dll
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\obj\Debug\Configuration.pdb
