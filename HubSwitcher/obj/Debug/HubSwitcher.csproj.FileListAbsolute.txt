@@ -28,3 +28,6 @@ C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitch
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\HubSwitcher\obj\Debug\HubSwitcher.pdb
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\Configuration.dll
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\Configuration.pdb
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\Security.dll
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\VBNetEncrypt.dll
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\HubSwitcher\bin\Debug\Security.pdb

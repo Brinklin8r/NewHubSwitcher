@@ -44,5 +44,11 @@
     <Compile Include="Config.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Security\Security\Security\Security.csproj">
+      <Project>{63068E5E-6505-4F5F-8240-55AAB5253198}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

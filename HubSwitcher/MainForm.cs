@@ -15,9 +15,10 @@ namespace HubSwitcher {
         public MainForm() {
             InitializeComponent();
         }
+        Config _AdminConfig = new Config();
 
         private void btnLaunch_Click(object sender, EventArgs e) {
-
+            _AdminConfig.WriteConfigFile();
         }
 
         private void btnEdit_Click(object sender, EventArgs e) {
@@ -27,7 +28,6 @@ namespace HubSwitcher {
         }
 
         private void btnCurrent_Click(object sender, EventArgs e) {
-            Config _AdminConfig = new Config();
             _AdminConfig.ReadConfigFile();
         }
     }

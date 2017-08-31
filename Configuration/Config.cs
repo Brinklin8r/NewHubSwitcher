@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using Security;
 
 namespace Configurations {
     public class Config {
@@ -15,17 +16,33 @@ namespace Configurations {
         private string _ManagerURL = "";
         private string _SecondaryManagerURL = "";
 
+        private Encrypt _encObj = new Encrypt();
+
         public void ReadConfigFile() {
             Configuration _config =
                 ConfigurationManager.OpenExeConfiguration(@"C:\Program Files (x86)\Bluepoint Solutions\RDC\IP Admin\IP Admin.exe");
 
-            _UIN = _config.  ("UIN");
-
+            AppSettingsSection _settings = (AppSettingsSection)_config.GetSection("appSettings");
+            if(_settings != null) {
+                _UIN = _encObj.DecryptValue(_settings.Settings["UIN"].Value);
+                _ManagerURL = _encObj.DecryptValue(_settings.Settings["ManagerURL"].Value);
+                _SecondaryManagerURL = _encObj.DecryptValue(_settings.Settings["SecondaryManagerURL"].Value);
+            }
 
         }
 
         public void WriteConfigFile() {
+            Configuration _config =
+                ConfigurationManager.OpenExeConfiguration(@"C:\Program Files (x86)\Bluepoint Solutions\RDC\IP Admin\IP Admin.exe");
 
+            AppSettingsSection _settings = (AppSettingsSection)_config.GetSection("appSettings");
+            if(_settings != null) {
+                _settings.Settings["UIN"].Value = _UIN;
+                _settings.Settings["ManagerURL"].Value = _ManagerURL;
+                _settings.Settings["SecondaryManagerURL"].Value = _SecondaryManagerURL;
+            }
+
+            _config.Save(ConfigurationSaveMode.Modified);
         }
     }
 }

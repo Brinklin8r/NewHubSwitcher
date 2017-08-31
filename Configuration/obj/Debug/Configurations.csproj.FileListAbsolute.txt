@@ -4,3 +4,6 @@ C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitch
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\obj\Debug\Configurations.csproj.CoreCompileInputs.cache
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\obj\Debug\Configuration.dll
 C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\obj\Debug\Configuration.pdb
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\bin\Debug\Security.dll
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\bin\Debug\VBNetEncrypt.dll
+C:\Users\cbrinkley\OneDrive - Alogent\Docs\Visual Studio 2017\Repos\NewHubSwitcher\Configuration\bin\Debug\Security.pdb
