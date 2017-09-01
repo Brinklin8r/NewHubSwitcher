@@ -24,10 +24,14 @@ namespace HubSwitcher {
 
 
         private void btnLaunch_Click(object sender, EventArgs e) {
-            _AdminConfig.WriteConfigFile();
+            RunProgram _prog = new RunProgram();
+
+            // Save config from Windows Form
+
+            _prog.Start(_AdminPath);
         }
 
-        private void btnEdit_Click(object sender, EventArgs e) {
+        private void btnUpdate_Click(object sender, EventArgs e) {
             tbURL.Text = "WWW.IMAGEPOINTHOSTED.COM";
             tbUIN.Text = "1";
             cbSystemDropDown.Text = "New";

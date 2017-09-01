@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.cbSystemDropDown = new System.Windows.Forms.ComboBox();
-            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnLaunch = new System.Windows.Forms.Button();
             this.lblURL = new System.Windows.Forms.Label();
             this.lblUIN = new System.Windows.Forms.Label();
@@ -42,16 +42,16 @@
             this.cbSystemDropDown.Size = new System.Drawing.Size(218, 21);
             this.cbSystemDropDown.TabIndex = 0;
             // 
-            // btnEdit
+            // btnUpdate
             // 
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEdit.Location = new System.Drawing.Point(96, 97);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(56, 25);
-            this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdate.Location = new System.Drawing.Point(96, 97);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(56, 25);
+            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnLaunch
             // 
@@ -129,7 +129,7 @@
             this.Controls.Add(this.lblUIN);
             this.Controls.Add(this.lblURL);
             this.Controls.Add(this.btnLaunch);
-            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.cbSystemDropDown);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "MainForm";
@@ -142,7 +142,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbSystemDropDown;
-        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnLaunch;
         private System.Windows.Forms.Label lblURL;
         private System.Windows.Forms.Label lblUIN;
