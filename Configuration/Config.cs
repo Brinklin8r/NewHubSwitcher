@@ -23,8 +23,6 @@ namespace Configurations {
                 );
             }
 
-
-
             //if(_settings != null) {
             //    _UIN = _VerrifyValue(_settings.Settings["UIN"].Value);
             //    _ManagerURL = _VerrifyValue(_settings.Settings["ManagerURL"].Value);
