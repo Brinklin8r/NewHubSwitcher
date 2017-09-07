@@ -10,7 +10,7 @@ namespace Configurations {
     public class Config {
         private Dictionary<string, string> _configSettings =
             new Dictionary<string, string>();
-                                             
+
         private Configuration _config;
         private AppSettingsSection _settings;
 
@@ -22,6 +22,12 @@ namespace Configurations {
                     _VerrifyValue(_settings.Settings[_settingName].Value)
                 );
             }
+
+            _VerrifyConfig();
+
+        }
+
+        private void _VerrifyConfig() {
 
             //if(_settings != null) {
             //    _UIN = _VerrifyValue(_settings.Settings["UIN"].Value);
@@ -43,6 +49,18 @@ namespace Configurations {
             //        _HubSwitcherDescription = "Current";
             //    }
             //}
+            if(_configSettings.TryGetValue("UIN", out string _testResult)) {
+                if(_configSettings.TryGetValue("ManagerURL", out _testResult)) {
+                    if(_configSettings.TryGetValue("SecondaryManagerURL", out _testResult)) {
+                        if(_configSettings.TryGetValue("HubSwitcher", out _testResult)) {
+                        } else {
+                            _configSettings.Add("HubSwitcher", "Current");
+                        }
+                    } else {
+                        _configSettings.Add("SecondaryManagerURL", _configSettings["ManagerURL"]);
+                    }
+                }
+            }
         }
 
         public void WriteConfigFile() {
