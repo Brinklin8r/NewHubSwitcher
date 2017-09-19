@@ -15,7 +15,7 @@ namespace HubSwitcher {
         public MainForm() {
             InitializeComponent();
 
-            _AdminConfig.ReadConfigFile();
+            //_AdminConfig.ReadConfigFile();
             updateWindow();
 
         }
@@ -44,9 +44,9 @@ namespace HubSwitcher {
         }
 
         private void updateWindow() {
-            tbUIN.Text = _AdminConfig.GetUIN();
-            tbURL.Text = _AdminConfig.GetManagerURL();
-            cbSystemDropDown.Text = _AdminConfig.GetDescription();
+            tbUIN.Text = _AdminConfig.GetValue("UIN");
+            tbURL.Text = _AdminConfig.GetValue("ManagerURL");
+            cbSystemDropDown.Text = _AdminConfig.GetValue("HubSwitcher");
         }
     }
 }
