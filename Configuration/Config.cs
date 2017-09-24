@@ -19,7 +19,7 @@ namespace Configurations {
                 string _settingName = _setting.ToString();
                 _configSettings.Add(
                     _settingName,
-                    _VerrifyValue(_settings.Settings[_settingName].Value)
+                    _settings.Settings[_settingName].Value
                 );
             }
 
@@ -27,40 +27,23 @@ namespace Configurations {
 
         }
 
-        private void _VerrifyConfig() {
-
-            //if(_settings != null) {
-            //    _UIN = _VerrifyValue(_settings.Settings["UIN"].Value);
-            //    _ManagerURL = _VerrifyValue(_settings.Settings["ManagerURL"].Value);
-
-            //    // Optional Config entries:
-            //    // If they do not exist in the Config File create them and then
-            //    // default to something.
-            //    try {
-            //        _SecondaryManagerURL = _VerrifyValue(_settings.Settings["SecondaryManagerURL"].Value);
-            //    } catch(Exception) {
-            //        _config.AppSettings.Settings.Add("SecondaryManagerURL", _ManagerURL);
-            //        _SecondaryManagerURL = _ManagerURL;
-            //    }
-            //    try {
-            //        _HubSwitcherDescription = _VerrifyValue(_settings.Settings["HubSwitcher"].Value);
-            //    } catch(Exception) {
-            //        _config.AppSettings.Settings.Add("HubSwitcher", "");
-            //        _HubSwitcherDescription = "Current";
-            //    }
-            //}
+        private bool _VerrifyConfig() {
             if(_configSettings.TryGetValue("UIN", out string _testResult)) {
-                if(_configSettings.TryGetValue("ManagerURL", out _testResult)) {
-                    if(_configSettings.TryGetValue("SecondaryManagerURL", out _testResult)) {
-                        if(_configSettings.TryGetValue("HubSwitcher", out _testResult)) {
+                if(Int32.TryParse(_VerrifyValue(_testResult), out int intUIN)) {
+                    if(_configSettings.TryGetValue("ManagerURL", out _testResult)) {
+
+                        if(_configSettings.TryGetValue("SecondaryManagerURL", out _testResult)) {
+                            if(_configSettings.TryGetValue("HubSwitcher", out _testResult)) {
+                            } else {
+                                _configSettings.Add("HubSwitcher", "Current");
+                            }
                         } else {
-                            _configSettings.Add("HubSwitcher", "Current");
+                            _configSettings.Add("SecondaryManagerURL", _configSettings["ManagerURL"]);
                         }
-                    } else {
-                        _configSettings.Add("SecondaryManagerURL", _configSettings["ManagerURL"]);
                     }
                 }
             }
+            return true;
         }
 
         public void WriteConfigFile() {
