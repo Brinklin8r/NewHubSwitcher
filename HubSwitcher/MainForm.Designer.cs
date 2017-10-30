@@ -32,6 +32,7 @@
             this.tbURL = new System.Windows.Forms.TextBox();
             this.tbUIN = new System.Windows.Forms.TextBox();
             this.btnCurrent = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbSystemDropDown
@@ -116,12 +117,23 @@
             this.btnCurrent.UseVisualStyleBackColor = true;
             this.btnCurrent.Click += new System.EventHandler(this.btnCurrent_Click);
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(153, 138);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 9;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(241, 183);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCurrent);
             this.Controls.Add(this.tbUIN);
             this.Controls.Add(this.tbURL);
@@ -150,6 +162,7 @@
         private System.Windows.Forms.TextBox tbURL;
         private System.Windows.Forms.TextBox tbUIN;
         private System.Windows.Forms.Button btnCurrent;
+        private System.Windows.Forms.Button btnSave;
     }
 }
 

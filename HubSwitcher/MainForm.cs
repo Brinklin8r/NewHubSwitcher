@@ -48,5 +48,10 @@ namespace HubSwitcher {
             tbURL.Text = _AdminConfig.GetValue("ManagerURL");
             cbSystemDropDown.Text = _AdminConfig.GetValue("HubSwitcher");
         }
+
+        private void btnSave_Click(object sender,EventArgs e)
+        {
+            _AdminConfig.WriteConfigFile();
+        }
     }
 }
