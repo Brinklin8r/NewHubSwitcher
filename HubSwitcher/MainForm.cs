@@ -39,14 +39,14 @@ namespace HubSwitcher {
         }
 
         private void btnCurrent_Click(object sender, EventArgs e) {
-            _AdminConfig.ReadConfigFile();
+           //_AdminConfig.BuildDict();
             updateWindow();
         }
 
         private void updateWindow() {
-            tbUIN.Text = _AdminConfig.GetValue("UIN");
-            tbURL.Text = _AdminConfig.GetValue("ManagerURL");
-            cbSystemDropDown.Text = _AdminConfig.GetValue("HubSwitcher");
+            //tbUIN.Text = _AdminConfig.GetValue("UIN");
+            //tbURL.Text = _AdminConfig.GetValue("ManagerURL");
+            //cbSystemDropDown.Text = _AdminConfig.GetValue("HubSwitcher");
         }
 
         private void btnSave_Click(object sender,EventArgs e)
